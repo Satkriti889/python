@@ -1,8 +1,9 @@
 class Battery:
-    def __init__(self,model,battery_level):
-        self.__model = model
-        self.__battery_level = battery_level
-        print(f"The model of your phone is {self.__model}.")
+    def __init__(self):
+        model=input("Enter the model : ")
+        self.model = model
+        self.__battery_level = 80
+        print(f"The model of your phone is {self.model}.")
 
     def charge(self):
         print(f"Your phone has {self.__battery_level}% charge.")
@@ -25,8 +26,14 @@ class Battery:
             print("Power saving mode turned on")
 
         else:
-            return
-c1=Battery("Samsung",50)
-c1.charge()
-c1.charging(30)
-c1.use(70)
+            return " "
+
+def take_input():
+    c1=Battery()
+
+    charged=int(input("Enter the charged charge: "))
+    c1.charging(charged)
+    usedcharge=int(input("Enter the used charge: "))
+    c1.use(usedcharge)
+
+take_input()
