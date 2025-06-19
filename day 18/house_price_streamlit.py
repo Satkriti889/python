@@ -3,7 +3,7 @@ import pandas as pd
 import joblib
 
 # Load model only
-model = joblib.load('house_price_model.pkl')  # ✅ Make sure this file exists
+model = joblib.load('house_price_model.pkl')  
 
 # App Title
 st.title("🏠 House Price Prediction App")
