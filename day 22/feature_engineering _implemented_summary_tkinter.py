@@ -7,7 +7,7 @@ import joblib
 # Load model and vectorizer
 try:
     model = joblib.load("new_model_amazon_musical_instruments_reviews.pkl")
-    vectorizer = joblib.load("new_amazon_musical_instruments_reviews.pkl")
+    vectorizer = joblib.load("new_model_amazon_musical_instruments_reviews.pkl")
 except FileNotFoundError:
     print("Model or vectorizer file not found. Run the training script first.")
     exit()
